@@ -19,5 +19,5 @@ do_install () {
     install -Dm 0755 updatehub-active-validated ${D}${bindir}/updatehub-active-validated
 }
 
-RDEPENDS_${PN} += "libubootenv-bin"
+RDEPENDS_${PN} += "libubootenv-bin updatehub-uboot-config"
 INSANE_SKIP_${PN} += "build-deps"
